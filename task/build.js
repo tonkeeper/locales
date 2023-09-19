@@ -36,7 +36,7 @@ const writeLocales = (dict) => {
     console.log(key);
     fs.writeFileSync(
       path.join(dist, `${key}.json`),
-      JSON.stringify(values, null, 4)
+      JSON.stringify(values, null, 2)
     );
   });
 };
@@ -95,7 +95,7 @@ const bumpMinorVersion = () => {
   versions[versions.length - 1] = parseInt(versions[versions.length - 1]) + 1;
   packageJson.version = versions.join(".");
 
-  fs.writeFileSync("package.json", JSON.stringify(packageJson, null, 4));
+  fs.writeFileSync("package.json", JSON.stringify(packageJson, null, 2));
 };
 
 const main = () => {
