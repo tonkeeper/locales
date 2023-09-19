@@ -1,7 +1,7 @@
 # TonApps Locales
 Locales storage for TonApps projects
 
-## Missing transactions for it locale
+## Missing transactions for it locale 🟥
 Missing 368 phrases of 955 total
 
 <details>
@@ -378,7 +378,7 @@ Missing 368 phrases of 955 total
 
 </details>
 
-## Missing transactions for ru locale
+## Missing transactions for ru locale 🟦
 Missing 85 phrases of 955 total
 
 <details>
