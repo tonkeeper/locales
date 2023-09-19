@@ -93,5 +93,6 @@
   "Operation": "Operation",
   "total_balance": "Total balance",
   "country": "Country",
-  "auto": "Auto"
+  "auto": "Auto",
+  "base_current_location": "Base current location"
 }
