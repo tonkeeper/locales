@@ -1,6 +1,6 @@
 {
     "name": "@tonkeeper/locales",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "author": "Nikita Kuznetsov <nkuz915@gmail.com>",
     "description": "Tonkeeper locales",
     "scripts": {
