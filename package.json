@@ -1,9 +1,9 @@
 {
-  "name": "@tonkeeper/locales",
-  "version": "0.1.3",
-  "author": "Nikita Kuznetsov <nkuz915@gmail.com>",
-  "description": "TonApps locales",
-  "scripts": {
-    "build": "rm -fr dist && node ./task/build"
-  }
+    "name": "@tonkeeper/locales",
+    "version": "0.1.4",
+    "author": "Nikita Kuznetsov <nkuz915@gmail.com>",
+    "description": "Tonkeeper locales",
+    "scripts": {
+        "build": "rm -fr dist && node ./task/build"
+    }
 }
