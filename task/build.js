@@ -66,7 +66,7 @@ const updateReadme = (missing, total) => {
       lines.push("<details>");
       lines.push("  <summary>Show</summary>");
       lines.push("");
-      keys.forEach((value) => lines.push(value));
+      keys.forEach((value) => lines.push(`- ${value}`));
       lines.push("");
       lines.push("</details>");
     }
