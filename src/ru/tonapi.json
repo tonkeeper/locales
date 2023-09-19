@@ -1,0 +1,20 @@
+{
+    "helloWorld": "Привет, мир!",
+    "depositStakeAction": "Стейкинг {{.Amount}}",
+    "jettonTransferAction": "Перевод {{.Value}} {{.JettonName}}",
+    "nftPurchaseAction": "Покупка NFT {{.Name}}",
+    "nftTransferAction": "Перевод NFT",
+    "poolImplementationDescription": "Минимальный депозит {{.Deposit}} ТОН",
+    "subscriptionAction": "Оплата подписки {{.Value}}",
+    "auctionBidMessage": "Ставка {{.Amount}} за {{.NftName}}",
+    "contractDeployAction": "Деплой контракта {{ if .Interfaces }} с интерфейсами {{.Interfaces}}{{ end }}",
+    "electionsDepositStakeAction": "Внесение {{.Amount}} в стейкинг",
+    "electionsRecoverStakeAction":  "Восстановление стейка в размере {{.Amount}}",
+    "jettonBurnAction": "Сжигание {{.Value}} {{.JettonName}}",
+    "jettonMintAction": "Минтинг {{.Value}} {{.JettonName}}",
+    "jettonSwapAction": "Обмен {{.AmountIn}} {{.JettonIn}} на {{.AmountOut}} {{.JettonOut}}",
+    "smartContractExecMessage": "Выполнение смарт-контракта",
+    "tonTransferAction": "Перевод {{.Value}}",
+    "withdrawStakeAction": "Вывод {{.Value}} из пула стейкинга",
+    "withdrawStakeRequestAction": "Запрос на вывод {{.Value}} из пула стейкинга"
+}

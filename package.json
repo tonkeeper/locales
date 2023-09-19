@@ -1,0 +1,15 @@
+{
+  "name": "@tonkeeper/locales",
+  "packageManager": "yarn@3.6.3",
+  "version": "0.1.0",
+  "author": "Nikita Kuznetsov <nkuz915@gmail.com>",
+  "description": "Tonkeeper locales",
+  "scripts": {
+    "build": "rm -fr dist && ts-node ./task/build"
+  },
+  "devDependencies": {
+    "node-fetch": "2.6.6",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  }
+}
