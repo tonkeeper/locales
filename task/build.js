@@ -88,6 +88,16 @@ const flattenObject = (obj, prefix = "") =>
     return acc;
   }, {});
 
+const bumpMinorVersion = () => {
+  const packageJson = JSON.parse(fs.readFileSync("package.json", "utf8"));
+
+  const versions = packageJson.version.split(".");
+  versions[versions.length - 1] = parseInt(versions[versions.length - 1]) + 1;
+  packageJson.version = versions.join(".");
+
+  fs.writeFileSync("package.json", JSON.stringify(packageJson, null, 4));
+};
+
 const main = () => {
   message("Build Locales");
 
@@ -100,6 +110,8 @@ const main = () => {
   fillMissingLocales(dict);
 
   writeLocales(dict);
+
+  bumpMinorVersion();
 
   message("End Build Locales");
 };
