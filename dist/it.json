@@ -791,6 +791,7 @@
     "total_balance": "Total balance",
     "country": "Country",
     "auto": "Auto",
+    "base_current_location": "Base current location",
     "paste": "Paste",
     "dns_renew_toast_success": "Domain renewed for 1 year",
     "dns_expiration_date": "Expiration date",

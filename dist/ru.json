@@ -984,6 +984,7 @@
     "apps_exchanges": "Exchanges",
     "apps_utils": "Utils",
     "apps_defi": "DeFi",
+    "base_current_location": "Base current location",
     "jettons_show_jettons": "Show tokens in wallet",
     "send_comment_label": "Add a comment",
     "approval.approve_many": "Approve %{count} incoming tokens",
