@@ -53,6 +53,28 @@ const fillMissingLocales = (dict) => {
   });
 };
 
+const updateReadme = (missing, total) => {
+  const lines = ["# TonApps Locales", "Locales storage for TonApps projects"];
+
+  Object.entries(missing).forEach(([locale, keys]) => {
+    if (keys.length) {
+      lines.push("");
+      lines.push(`## Missing transactions for ${locale} locale`);
+      lines.push(`Missing ${keys.length} phrases of ${total} total`);
+
+      lines.push("");
+      lines.push("<details>");
+      lines.push("  <summary>Show</summary>");
+      lines.push("");
+      keys.forEach((value) => lines.push(value));
+      lines.push("");
+      lines.push("</details>");
+    }
+  });
+
+  fs.writeFileSync("README.md", lines.join("\n"), { encoding: "utf8" });
+};
+
 const logMissingKeys = (dict) => {
   const missing = {};
 
@@ -77,6 +99,8 @@ const logMissingKeys = (dict) => {
       );
     }
   });
+
+  updateReadme(missing, total);
 };
 
 const flattenObject = (obj, prefix = "") =>
