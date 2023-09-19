@@ -59,7 +59,9 @@ const updateReadme = (missing, total) => {
   Object.entries(missing).forEach(([locale, keys]) => {
     if (keys.length) {
       lines.push("");
-      lines.push(`## Missing transactions for ${locale} locale`);
+      const icon = keys.length > 100 ? "🟥" : "🟦";
+
+      lines.push(`## Missing transactions for ${locale} locale ${icon}`);
       lines.push(`Missing ${keys.length} phrases of ${total} total`);
 
       lines.push("");
